@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
     <title>Saumitra Tiwari Portfolio</title>
-<body>
-<h1>Hi World</h1>
-<p>This is my personal portfolio.</p>
-<p>I've attached some links to applications I've developed</p>
-<h1><a href="https://tiwari-node-weather-website.herokuapp.com/">Weather app</a></h1>
-<p>More applications under development!</p>
-</body>
+	<body>
+		<h1>Hi World</h1>
+		<p>This is my personal portfolio.</p>
+		<p>I've attached some links to applications I've developed</p>
+		<h1><a href="https://tiwari-node-weather-website.herokuapp.com/">Weather app</a></h1>
+		<h1><a href="https://tiwari-task-manager-api.herokuapp.com/">Task Manager app</a></h1>
+		<p>This has multiple endpoints with authentication</p>
+		<p>They are:<p>
+		<ul>
+			<li>/users 				- POST, creates a new user, returns a token</li>
+			<li>/users/login 		- POST, logs in a user, returns a token</li>
+			<li>/users/logout 		- POST - logs out the currently authenticated user, uses the token from above in Authorization headers</li>
+			<li>/users/me 			- GET, PATCH, DELETE, read or update or delete the current user, using token</li>
+			<li>/users/me/avatar 	- POST, DELETE - upload a picture</li>
+			<li>/tasks 				- POST, GET - reads tasks for an authenticated user</li>
+			<li>/tasks/:id 			- GET, PATCH, DELETE - read or update or delete single task</li>
+			<li>/users/login 		- POST, returns a token -</li>
+			<li>/users 				- POST, reutrn a token</li>
+			<li>/users/login 		- POST, returns a token -</li>
+			<li>/users 				- POST, reutrn a token</li>
+			<li>/users/login 		- POST, returns a token -</li>
+			<li>/users 				- POST, reutrn a token</li>
+			<li>/users/login 		- POST, returns a token -</li>
+		</ul>
+		<p>Front - end under development!</p>
+		<p>More applications under development!</p>
+	</body>
 </html>
