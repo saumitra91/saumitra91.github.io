@@ -12,11 +12,29 @@
 		<p>They are:<p>
 		<ul>
 			<li>/users 				- POST, creates a new user, returns a token.</li>
+			<p>Request body is : 
+				{
+					"name":"John Doe",
+					"email":"John.Doe@mail-server.com",
+					"password":"password"
+				}</p>
 			<li>/users/login 		- POST, logs in a user, returns a token.</li>
+			<p>Request body is : 
+				{
+					"email":"John.Doe@mail-server.com",
+					"password":"password"
+				}</p>
 			<li>/users/logout 		- POST - logs out the currently authenticated user, uses the token from above in Authorization headers.</li>
 			<li>/users/me 			- GET, PATCH, DELETE, read or update or delete the current user, using token.</li>
 			<li>/users/me/avatar 	- POST, DELETE - upload a picture.</li>
+			<p>Request body is form-data with key='avatar' and value as profile-picture.jpg</p>
 			<li>/tasks 				- POST, GET - reads tasks for an authenticated user.</li>
+			<p>Request body is :
+				{
+					"description":"task description",
+					"completed":true
+				}
+			</p>
 			<li>/tasks/:id 			- GET, PATCH, DELETE - read or update or delete single task.</li>
 		</ul>
 		<p>Front-end under development!</pz>
